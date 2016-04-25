@@ -1,11 +1,11 @@
 rhug-db:
-    image: rhug-db
+  build: ../rhug-db
 rhug-app:
-  image: rhug-app
+  build: ../rhug-app 
   links:
     - rhug-db
 rhug-web:
-  image: rhug-web
+  build: ../rhug-web
   links:
     - rhug-app
   ports:
